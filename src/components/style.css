@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+.go-top a{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 15;
+  color:rgb(85 105 220);
+  bottom: 0;
+  right: 1vw;
+  text-decoration: none;
+}
+.go-top a i{
+  font-size: 2.0rem;
+}
+.go-top:hover{
+  cursor: pointer;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+nav {
+    background-color: rgb(85 105 220);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-style: italic;
+    height: 7vh !important;
+  }
+  .logo {
+    font-size: 1.5rem;
+    display: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: black;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  .social a{
+    color:white;
+  }
+  .footer-social a{
+    color: black;
+  }
+  #check {
+    display: none;
+  }
+
+  .parallax {
+    background-image: url("../images/bg-image.jpg");
+    min-height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(85 105 220);
+  }
+  .parallax .container2{
+    background-color: rgb(85 105 220);
+    grid-row :1 /span 2;
+    grid-column: 2/span 2;
+  }
+  .container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container4{
+    width: 80%;
+    color: white;
+  }
+  .container4 h1{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13vh;
+  }
+
+  .container2 h2{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+  }
+
+  .container2 p{
+    font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  }
+
+  .container4 .p{
+    font-family: "Baumans", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vh;
+  }
+
+  .profile{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 45px;
+    transition: all 2s ease-in-out;
+  }
+
+  .profile:hover{
+    transform: scale(2);
+  }
+
+  .container2 h2,.container2 p,.container2 .social,.container2 button{
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+    color: white;
+  }
+
+  .container2 button{
+    color: rgb(85 105 220);
+    height: 7vh;
+    border: none;
+    font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.5vh;
+  width: 80%;
+  }
+
+  button:hover{
+    cursor: pointer;
+  }
+
+  .social{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+  }
+  .social i{
+    margin: auto 5px;
+  }
+
+
+  .about,.education-project,.skills{
+    background-color: rgb(238 240 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .education-project,.skills{
+    background-color: white;
+  }
+  .content{
+    margin: 10vh auto;
+    width: 80%;
+  }
+  .content h2,.education h2,.projects h2,.skills h2{
+    color: rgb(85 105 220);
+    font-style: italic;
+    font-size: 5vh;
+    margin-bottom: 2vh;
+  }
+  .skills{
+    flex-direction: column;
+  }
+  .skills h2,.skills p{
+    width: 80%;
+    display: block;
+  }
+  .content .title,.education .title,.projects .title,.skills .title{
+    color: rgb(85 105 220);
+    font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3vh;
+  margin-bottom: 7vh ;
+  letter-spacing: 1vh;
+  }
+
+  .content .data-for-background{
+    font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3vh;
+  letter-spacing: 3px;
+  }
+
+  .year,.area{
+    font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2vh;
+  letter-spacing: 3px;
+  margin-bottom: 2vh;
+  }
+
+  .interest p{
+    letter-spacing: 2px;
+  }
+
+  .area{
+  margin-bottom: 7vh;
+  }
+
+  .content-education{
+    margin: 5vh auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10vh;
+  }
+
+  .education,.projects{
+    margin: 10vh auto 0vh auto;
+  }
+
+  .content-skill{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .skill-name{
+    width: 30%;
+    margin: 2vh auto;
+  }
+  .skill-range{
+    width: 70%;
+    margin: 2vh auto;
+    background-color: black;
+    height: 1px;
+  }
+
+  hr{
+    width: 0%;
+  }
+
+  .interest{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .interest p{
+    width: 50%;
+  }
+
+  .footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(238 240 251);
+    width: 100%;
+    justify-content: center;
+  }
+  .footer div{
+    width: 50% ;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(85 105 220);
+  }
+  .footer-1 h1{
+    font-size: 4vh;
+    width: 50%;
+    margin: auto;
+  }
+  .footer-social{
+    margin: 10vh auto;
+    display: grid;
+    color: black !important;
+    grid-template-columns: repeat(10,auto);
+  }
+
+  .footer-1,.footer-2{
+    margin-top:10vh;
+  }
+
+  .footer-2 p{
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+
+  .footer-3,.footer-4{
+    margin-bottom: 10vh;
+  }
+
+  .footer-4 button{
+    margin: 5vh 0vh;
+    display: block;
+    width: 40%;
+    text-align: center;
+    color: white;
+    background-color: rgb(85 105 220);
+    height: 7vh;
+    border: none;
+    font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.5vh;
+  }
+
+  #display{
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 0% ;
+    overflow: hidden;
+  }
+  
+  #operation,#close{
+    position: fixed; 
+    bottom: 3vh; 
+    left: 1vw;
+  }
+  @keyframes animate {
+    from{
+      width: 0%;
+    }
+    to{
+      width: 100%;
+    }
+  }
+
+  @keyframes full {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 80%;
+    }
+  }
+  @keyframes software {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 80%;
+    }
+  }
+  @keyframes android {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 60%;
+    }
+  }
+  @keyframes lead {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 95%;
+    }
+  }
+  @keyframes analyze {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 50%;
+    }
+  }
+  @keyframes edit {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 70%;
+    }
+  }
+  @keyframes hindi {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 100%;
+    }
+  }
+  @keyframes english {
+    from{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+    }
+    to{
+        border: solid rgb(85 105 220);
+        border-width: 2px;
+        width: 80%;
+    }
+  }
+
+  @media(max-width: 1080px){
+    .parallax {
+        grid-template-columns: 2fr 1fr;
+      }
+      .parallax{
+        grid-template-columns: 1fr;
+    }
+    .parallax .container3{
+        grid-row:1/span2;
+        grid-column: 1/span1;
+        padding: 20vh 0vh;
+    }
+    .container4 h1{
+        font-size: 7vh;
+        margin-bottom: 4vh;
+    }
+    .container4 .p{
+        font-size: 3vh;
+    }
+    .parallax .container2{
+        grid-row :3 /span 1;
+        grid-column: 1/span 2;
+        padding-top: 45px;
+      }
+      .container2 .profile{
+        width: 30%;
+      }
+  }
+  @media(max-width: 580px){
+    .content-education {
+        gap: 3vh;
+      }
+      .content-skill{
+        flex-direction: column;
+        width: 80%;
+      }
+      .skill-name{
+        width: 100%;
+        margin: 2vh auto;
+      }
+      .skill-range{
+        width: 100%;
+        margin: 2vh auto;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .footer{
+        flex-direction: column;
+        margin: 2.5vh auto;
+      }
+      .footer div{
+        width: 100%;
+      }
+      .footer-2,.footer-1,.footer-3,.footer-4{
+        margin: 2.5vh auto;
+      }
+      .footer-2 p,.footer-social{
+        text-align: center;
+      }
+      .footer-4 button{
+        display: block;
+        margin: auto;
+      }
+      .footer-social{
+        grid-template-columns: repeat(4, auto);
+      }
+    
+    .logo{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 50px;
+      right: -100%;
+      background-color: rgb(85 105 220);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }

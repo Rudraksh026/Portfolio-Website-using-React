@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Rudraksh</title>
+  </head>
+  <body onscroll="extra()">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      function extra(){
+        const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if(scrollTop >= 1360){
+          const arr = ["full","software","android","lead","analyze","edit","hindi","english"]
+          for (let i =0;i<arr.length;i++){
+            document.getElementsByClassName("1")[i].style.animation = arr[i]+" 2s ease-in-out 0s 1 forwards"
+          }
+        }
+  }
+    </script>
+  </body>
+</html>
